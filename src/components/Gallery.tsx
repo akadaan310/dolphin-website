@@ -4,37 +4,16 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const images = [
-  {
-    src: "https://images.unsplash.com/photo-1686178827149-6d55c72d81df?fm=jpg&q=80&w=800&auto=format&fit=crop",
-    label: "Residential Deep Clean",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1581578949510-fa7315c4c350?fm=jpg&q=80&w=800&auto=format&fit=crop",
-    label: "Home Cleaning Service",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1758272421751-963195322eaa?fm=jpg&q=80&w=800&auto=format&fit=crop",
-    label: "Move-In / Move-Out Clean",
-  },
-  {
-    src: "https://plus.unsplash.com/premium_photo-1661914082480-4e9c89baa3be?fm=jpg&q=80&w=800&auto=format&fit=crop",
-    label: "Modern Office",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?fm=jpg&q=80&w=800&auto=format&fit=crop",
-    label: "Floor & Surface Care",
-  },
+  { src: "/outdoor.png",               label: "Outdoor Cleaning" },
+  { src: "/outdoor2.png",              label: "Exterior Services" },
+  { src: "/residential.png",           label: "Residential Clean" },
+  { src: "/residential2.png",          label: "Interior Deep Clean" },
+  { src: "/VanandSkyline-picture.png", label: "Our Fleet" },
+  { src: "/hero.png",                  label: "The Dolphin Team" },
+  { src: "/leadership.png",            label: "Leadership Team" },
   {
     src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?fm=jpg&q=80&w=800&auto=format&fit=crop",
     label: "Bathroom Sanitization",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1762810981576-1b07f76af9d2?fm=jpg&q=80&w=800&auto=format&fit=crop",
-    label: "Clean Driveway",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1602860739945-9a61573cd62d?fm=jpg&q=80&w=800&auto=format&fit=crop",
-    label: "Outdoor Patio",
   },
 ];
 
@@ -96,7 +75,7 @@ export default function Gallery() {
           >
             <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
               <Image
-                src={images[selected].src.replace("w=800", "w=1600")}
+                src={images[selected].src.startsWith("/") ? images[selected].src : images[selected].src.replace("w=800", "w=1600")}
                 alt={images[selected].label}
                 fill
                 className="object-cover"

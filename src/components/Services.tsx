@@ -4,7 +4,7 @@ const services = [
   {
     title: "Residential Cleaning",
     description: "Tailored home solutions including deep cleans, recurring maintenance, and move-in/out services.",
-    image: "https://images.unsplash.com/photo-1581578949510-fa7315c4c350?fm=jpg&q=80&w=800&auto=format&fit=crop",
+    image: "/residential.png",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -24,7 +24,7 @@ const services = [
   {
     title: "Outdoor Cleaning",
     description: "Pressure washing, window cleaning, and patio detailing to keep your exterior as fresh as the interior.",
-    image: "https://images.unsplash.com/photo-1762810981576-1b07f76af9d2?fm=jpg&q=80&w=800&auto=format&fit=crop",
+    image: "/outdoor2.png",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
